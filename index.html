@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Am I logical?</title>
+</head>
+<body>
+<h1 id="title">Am I logical?</h1>
+<p id="description">
+	This survey tests whether or not you, the user, is a logical human being. It will test certain facts about sports,
+	life, and other important facets of life.
+</p>
+<form id="survey-form">
+	<!--	Name element-->
+	<div class = "form-group">
+		<label id="name-label" for="name">Name:</label>
+		<input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required>
+	</div>
+	<!-- email element -->
+	<div class = "form-group">
+		<label id="email-label" for= "email-label">Email:</label>
+		<input type="email" name="email"  class="form-control" id = "email" placeholder="Enter your name" required>
+	</div>
+	<div class="form-group" id = "number">
+		<label id = "number-label">
+			How much money is Donald Trump worth?:
+		</label>
+		<input type = "number"  min = "-2000000000" max = "-1000000" required placeholder = "it isn't positive">
+
+	</div>
+	<div class = "form-group">
+		<p>Did you pay more in taxes than Donald Trump?</p>
+		<select id= "dropdown" name = "taxes" class = "form-control" placeholder="worth" required>
+			<option disabled selected value> Yes/No</option>
+			<option value= "yes">
+				Yes
+			</option>
+			<option value = "no">
+				No
+			</option>
+			<option value = "no, I'm rich, taxes are for the poor">
+				no, I'm rich, taxes are for the poor
+			</option>
+			<option value = "yes, even though i can rub two pennies together and he can't">
+				yes, even though i can rub two pennies together and he can't
+			</option>
+		</select>
+	</div>
+	<div class ="form-group">
+		<label class = "radio-label">
+
+			<input type = "radio" id = "Independent" value = "Independent" name = "party">
+			<label for="Independent">
+				Independent
+			</label>
+			<input type = "radio" id = "Democrat" value = "Democrat" name = "party">
+			<label for="Democrat">
+				Democrat
+			</label>
+			<input type = "radio" id = "Russian Stooge" value = "Russian Stooge" name = "party">
+			<label for="Russian Stooge">
+				Russian Stooge
+			</label>
+		</label>
+	</div>
+	<div class= "form-group">
+		<button type = "submit" class = "submit-button">
+			Submit
+		</button>
+	</div>
+
+</form>
+</body>
+</html>
